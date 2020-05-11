@@ -1,0 +1,29 @@
+{
+  "development": {
+    "username": "jolan",
+    "password": "alinadir",
+    "database": "employee_management",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "jolan",
+    "password": "alinadir",
+    "database": "employee_management",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "jolan",
+    "password": "alinadir",
+    "database": "employee_management",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
