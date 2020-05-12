@@ -1,0 +1,75 @@
+<div class="row-container" style="height: 100vh;">
+  <div class="col red">
+    One of three columns
+  </div>
+  <div class="col">
+    <div class="container">
+      <div class="login-content">
+        <div class="content-center">
+          <h2 class="mb-4">welcome Back :)</h2>
+          <p>adfasdfasdfaksdhfashdfiahdsfjasdhfiuagsidfaksdjgfajsdgfkjadsfjk</p>
+        </div>
+        <!-- Default form login -->
+        <form [formGroup]="validationForm">
+          <div class="md-form">
+            <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+            <input
+              mdbInput
+              mdbValidate
+              formControlName="emailFormEx"
+              minLength="8"
+              maxLength="25"
+              type="email"
+              class="form-control"
+              id="form9"
+            />
+            <label for="form9">Type your e-mail</label>
+            <mdb-error
+              *ngIf="
+                emailFormEx.invalid &&
+                (emailFormEx.dirty || emailFormEx.touched)
+              "
+              >Input invalid</mdb-error
+            >
+            <mdb-success
+              *ngIf="
+                emailFormEx.valid && (emailFormEx.dirty || emailFormEx.touched)
+              "
+              >Input valid</mdb-success
+            >
+          </div>
+
+          <div class="md-form">
+            <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+            <input
+              mdbInput
+              mdbValidate
+              formControlName="passwordFormEx"
+              minLength="10"
+              maxLength="25"
+              type="password"
+              class="form-control"
+              id="form10"
+            />
+            <label for="form10">Type your password</label>
+            <mdb-error
+              *ngIf="
+                passwordFormEx.invalid &&
+                (passwordFormEx.dirty || passwordFormEx.touched)
+              "
+              >Input invalid
+            </mdb-error>
+            <mdb-success
+              *ngIf="
+                passwordFormEx.valid &&
+                (passwordFormEx.dirty || passwordFormEx.touched)
+              "
+              >Input valid
+            </mdb-success>
+          </div>
+        </form>
+        <!-- Default form login -->
+      </div>
+    </div>
+  </div>
+</div>

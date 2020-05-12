@@ -5,8 +5,7 @@
     "database": "employee_management",
     "host": "127.0.0.1",
     "port": 5432,
-    "dialect": "postgres",
-    "operatorsAliases": false
+    "dialect": "postgres"
   },
   "test": {
     "username": "jolan",

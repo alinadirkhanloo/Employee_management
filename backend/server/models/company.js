@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   Company.associate = function (models) {
     // associations can be defined here
     Company.hasMany(models.Employee, {
-      foreignKey: "company_id",
+      foreignKey: "companyId",
       as: "employees",
     });
   };
