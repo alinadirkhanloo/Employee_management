@@ -1,5 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+// @media (min-width: 1200px) { ... }
+@font-face {
+    font-family: casa;
+    src: url(./assets/font/Far_Casablanca/Far_Casablanca.ttf);
+  }
+p,a,span,h1,h2,label,mdb-error,mdb-success{
+    font-family: casa!important;
+}
+
 // Small devices (landscape phones, 576px and up)
+
+
 // @media (min-width: 576px) { ... }
 
 // Medium devices (tablets, 768px and up)
@@ -9,4 +20,3 @@
 // @media (min-width: 992px) { ... }
 
 // Extra large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { ... }

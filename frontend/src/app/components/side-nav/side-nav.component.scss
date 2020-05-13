@@ -1,0 +1,116 @@
+.nav-container {
+  height: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
+}
+.nav {
+  background: #fff;
+  width: 20%;
+  -ms-flex: 0 100px;
+  -webkit-box-flex: 0;
+  -moz-box-flex: 0;
+  -ms-box-flex: 0;
+  box-flex: 0;
+}
+
+.main {
+  width: 80%;
+  background: aliceblue;
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  #sidebar {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    float: right;
+    background: #fff;
+  }
+  #sidebar-nav {
+    width: 106%;
+    height: calc(100% - 95px);
+    padding: 0;
+    background: #fff;
+    // border-left: 1px solid #E0E0E0;
+    overflow-y: scroll;
+  }
+  #sidebar-nav h2 {
+    color: #60636B;
+    float: right;
+    width: 100%;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 3px 0 2px 20px;
+    border-top: 1px solid #4D4C4C;
+    box-sizing: border-box;
+    margin: 10px 0;
+  }
+  #sidebar-nav ul {
+  
+  }
+  #sidebar-nav ul li {
+  
+  }
+  #sidebar-nav ul li a {
+    color: rgb(182, 182, 182);
+    text-align: center;
+    font-size: .95em;
+    padding: 15px 20px;
+    float: right;
+    width: 100%;
+    font-weight: 600;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #sidebar-nav ul li:hover a, #sidebar-nav ul li:hover a i, #sidebar-nav li.active a, #sidebar-nav li.active a i {
+    color: #524496;
+    font-size: 18px;
+  }
+  #sidebar-nav ul li:hover a {
+    background: #fff;
+    color: #524496;
+    font-size: 18px;
+  }
+  #sidebar-nav ul li.active a {
+    background: #fff;
+    color: #524496;
+    font-size: 1.3rem;
+  }
+  #sidebar-nav ul li a.active {
+    border-left: 0.7rem solid #524496;
+    color: #524496;
+    font-size: 1.3rem;
+  }
+  #sidebar-nav ul li a.active i{
+    color: #524496;
+    font-size: 1.3rem;
+  }
+  #sidebar-nav i {
+    padding-left: 4rem;
+    font-size: 1em;
+    color: rgb(182, 182, 182);
+    width: 25px;
+    text-align: center;
+  }

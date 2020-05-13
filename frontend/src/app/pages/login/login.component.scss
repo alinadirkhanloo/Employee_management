@@ -1,83 +1,124 @@
 .row-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.content-center{
-    text-align: right;
-    padding: 0 5%;
+.content-center {
+  text-align: right;
+  padding: 0 5%;
 }
 
-.login-content{
-    width: 60%;
-    margin: auto;
-    margin-top: 30%;
+.login-content {
+  width: 60%;
+  margin: auto;
+  margin-top: 30%;
 }
 
-
-.input-icon{
-    right: 0;
+.input-icon {
+  right: 0;
 }
 ::ng-deep .input-icon i {
-    right: 0;
+  right: 0;
+  color: #524396;
 }
 ::ng-deep .md-form label {
-    right: 0!important;
-    left: unset;
+  right: 0 !important;
+  left: unset;
 }
 .md-form .prefix ~ input {
-    margin-right: 2.5rem;
-    margin-left: unset;
-    width: calc(100% - 2.5rem);
+  margin-right: 2.5rem;
+  margin-left: unset;
+  width: calc(100% - 2.5rem);
 }
 .md-form .prefix ~ label {
-    max-width: calc(99% - 2.5rem);
-    margin-right: 2.5rem!important;
-    margin-left: unset;
+  max-width: calc(99% - 2.5rem);
+  margin-right: 2.5rem !important;
+  margin-left: unset;
 }
-.input-padd{
-    // background-color: white;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 1%;
-    margin-top: 2%;
-    padding-top: 0.01%;
+.input-padd {
+  // background-color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 1%;
+  margin-top: 2%;
+  padding-top: 0.01%;
 }
-.md-form .prefix ~ .error-message, .md-form .prefix ~ .success-message {
-     right: 2.5rem!important;
-     left: unset;
+.md-form .prefix ~ .error-message,
+.md-form .prefix ~ .success-message {
+  right: 2.5rem !important;
+  left: unset;
 }
 
-.md-form input{
-    border-bottom: 1px solid #606163!important;
+.md-form input {
+  border-bottom: 1px solid #606163 !important;
 }
-::nd-deep mdb-checkbox input[type=checkbox] {
-    right: 0;
+::nd-deep mdb-checkbox input[type="checkbox"] {
+  right: 0;
 }
 ::ng-deep .custom-checkbox .custom-control-label::before {
-    right: -1.5rem;
-    left: unset;
+  right: -1.5rem;
+  left: unset;
 }
 ::ng-deep .custom-checkbox .custom-control-label::after {
-    right:-1.5rem;
-    left: unset;
+  right: -1.5rem;
+  left: unset;
 }
 ::ng-deep .custom-control {
-    padding-left: unset;
-    padding-right: 4rem;
+  padding-left: unset;
+  padding-right: 4rem;
 }
-.round{
-    border-radius: 2rem!important;
-    float: right;
+.round {
+  border-radius: 2rem !important;
+  float: right;
 }
-.signIn-btn{
-  background-color:  #240e6d!important;  
+.back-green {
+  background-color: #78a143 !important;
+  color: #fffefe !important;
+  font-size: 16px;
 }
-.signUp-btn{
-    background-color:  #fff!important; 
-    color: #000!important; 
+.text-green {
+  color: #8dbe4f !important;
 }
-.bluee{
-    background-color: #f8fafb;
-    // background-color: #606a6e;rounded z-depth-2
+.back-purple {
+  background-color: #524496 !important;
+  color: #fff;
+  font-size: 16px;
+}
+.text-purple {
+  color: #524496 !important;
+}
+.fn-2 ::ng-deep i {
+  font-size: 1.3rem !important;
+  margin: 60% 0;
+}
+
+.circule {
+  position: relative;
+  padding: 0;
+  margin: 10px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0.1px solid #98999b;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  width: 47px;
+  height: 47px;
+  // box-shadow: 0 1px 2px 0 rgba(0,0,0,.1), 0 1px 3px 0 rgba(0,0,0,.1);
+}
+
+.back {
+  background-color: #fff;
+  // background-color: #606a6e;rounded z-depth-2
+}
+
+::ng-deep .custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #524496;
+  background-color: #524496;
+}
+.login-img {
+  width: 50rem;
+  margin-left: 10rem;
+  height: 50rem;
 }
