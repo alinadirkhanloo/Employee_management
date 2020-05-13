@@ -14,10 +14,70 @@
     margin-top: 30%;
 }
 
-.red{
-    background-color: red;
+
+.input-icon{
+    right: 0;
+}
+::ng-deep .input-icon i {
+    right: 0;
+}
+::ng-deep .md-form label {
+    right: 0!important;
+    left: unset;
+}
+.md-form .prefix ~ input {
+    margin-right: 2.5rem;
+    margin-left: unset;
+    width: calc(100% - 2.5rem);
+}
+.md-form .prefix ~ label {
+    max-width: calc(99% - 2.5rem);
+    margin-right: 2.5rem!important;
+    margin-left: unset;
+}
+.input-padd{
+    // background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+    margin-top: 2%;
+    padding-top: 0.01%;
+}
+.md-form .prefix ~ .error-message, .md-form .prefix ~ .success-message {
+     right: 2.5rem!important;
+     left: unset;
 }
 
-.blue{
-    background-color: blue;
+.md-form input{
+    border-bottom: 1px solid #606163!important;
+}
+::nd-deep mdb-checkbox input[type=checkbox] {
+    right: 0;
+}
+::ng-deep .custom-checkbox .custom-control-label::before {
+    right: -1.5rem;
+    left: unset;
+}
+::ng-deep .custom-checkbox .custom-control-label::after {
+    right:-1.5rem;
+    left: unset;
+}
+::ng-deep .custom-control {
+    padding-left: unset;
+    padding-right: 4rem;
+}
+.round{
+    border-radius: 2rem!important;
+    float: right;
+}
+.signIn-btn{
+  background-color:  #240e6d!important;  
+}
+.signUp-btn{
+    background-color:  #fff!important; 
+    color: #000!important; 
+}
+.bluee{
+    background-color: #f8fafb;
+    // background-color: #606a6e;rounded z-depth-2
 }

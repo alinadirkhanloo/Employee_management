@@ -1,8 +1,5 @@
 <div class="row-container" style="height: 100vh;">
-  <div class="col red">
-    One of three columns
-  </div>
-  <div class="col">
+  <div class="col bluee">
     <div class="container">
       <div class="login-content">
         <div class="content-center">
@@ -12,7 +9,7 @@
         <!-- Default form login -->
         <form [formGroup]="validationForm">
           <div class="md-form">
-            <mdb-icon fas icon="envelope" class="prefix"></mdb-icon>
+            <mdb-icon fas icon="envelope" class="prefix input-icon"></mdb-icon>
             <input
               mdbInput
               mdbValidate
@@ -40,7 +37,7 @@
           </div>
 
           <div class="md-form">
-            <mdb-icon fas icon="lock" class="prefix"></mdb-icon>
+            <mdb-icon fas icon="lock" class="prefix input-icon"></mdb-icon>
             <input
               mdbInput
               mdbValidate
@@ -67,9 +64,24 @@
               >Input valid
             </mdb-success>
           </div>
+          <div class="row">
+            <div class="col">
+              <mdb-checkbox [default]="true" style="text-align: right;"
+                >Default unchecked</mdb-checkbox
+              >
+            </div>
+            <div class="col"><a href="#">fdsafasdfasdasdf</a></div>
+
+          </div>
+          <a mdbBtn class="mt-5 signIn-btn round z-depth-1" color="info" rounded="true" mdbWavesEffect>Read more</a>
+          <a mdbBtn class="mt-5 signUp-btn round z-depth-1" color="info" rounded="true" mdbWavesEffect>Read more</a>
         </form>
         <!-- Default form login -->
       </div>
     </div>
+  </div>
+
+  <div class="col bluee">
+    One of three columns
   </div>
 </div>
