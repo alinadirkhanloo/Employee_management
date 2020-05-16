@@ -1,25 +1,49 @@
 <div class="nav-container">
   <div class="nav">
-    <header style="height: 25vh;">
-        <p><img src="../../../assets/imgs/logo.png"  style="margin: auto; width: 10rem;margin: 2rem 65%;height: 10rem;"/></p>
-      </header>
-    <section id="sidebar"> 
-        <div class="white-label">
-        </div> 
-        <div id="sidebar-nav">   
-          <ul>
-            <li ><a href="#" class="active"><i class="fa fa-desktop "></i>داشبورد</a></li>
-            <li><a href="#"><i class="fa fa-calendar"></i> Calendar</a></li>
-            <li><a href="#"><i class="fa fa-sitemap"></i> SEO Tools</a></li>
-            <li><a href="#"><i class="fa fa-map-marker"></i> Get Traffic</a></li>     
-            <li><a href="#"><i class="fa fa-users"></i> Employees</a></li>
-          </ul>
-        </div>
-      </section>
+    <header class="w-100 text-center">
+      <p>
+        <img
+          src="../../../assets/imgs/logo.png"
+          style="width: 7rem; height: 7rem;"
+        />
+      </p>
+    </header>
+    <section id="sidebar">
+      <div class="text-center">
+        <a
+        mdbBtn
+        class="btn back-purple round z-depth-1"
+        mdbWavesEffect
+        >وارد میشم</a
+      >
+      </div>
+      <div id="sidebar-nav" class="mt-4">
+        <ul class="mt-4">
+          <li>
+            <a href="#" class="active"><i class="fa fa-desktop"></i>داشبورد</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-sitemap"></i> SEO Tools</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-map-marker"></i> Get Traffic</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-users"></i> Employees</a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </div>
 
   <div class="main">
-      sd
+    <div>
+      <app-navbar></app-navbar>
+    </div>
+
     <router-outlet></router-outlet>
   </div>
 </div>

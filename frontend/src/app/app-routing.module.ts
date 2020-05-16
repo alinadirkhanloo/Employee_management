@@ -1,3 +1,4 @@
+import { NavbarComponent } from './components/side-nav/navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,6 +7,7 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
+  {path:'aaa',component:NavbarComponent},
   {
     path: 'sidenav',
     component: SideNavComponent,

@@ -12,6 +12,11 @@
   -ms-box-orient: horizontal;
   box-orient: horizontal;
 }
+
+.nav-container header{
+  height: 12rem;
+}
+
 .nav {
   background: #fff;
   width: 20%;
@@ -24,18 +29,11 @@
 
 .main {
   width: 80%;
-  background: aliceblue;
-  -ms-flex: 1;
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -ms-box-flex: 1;
-  box-flex: 1;
+  background: rgb(204, 201, 201);
+  border-radius: 5rem;
+  padding: 1rem 4rem;
 }
-ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+
   a {
     text-decoration: none;
   }
@@ -46,14 +44,7 @@ ul {
     float: right;
     background: #fff;
   }
-  #sidebar-nav {
-    width: 106%;
-    height: calc(100% - 95px);
-    padding: 0;
-    background: #fff;
-    // border-left: 1px solid #E0E0E0;
-    overflow-y: scroll;
-  }
+ 
   #sidebar-nav h2 {
     color: #60636B;
     float: right;
@@ -66,19 +57,31 @@ ul {
     box-sizing: border-box;
     margin: 10px 0;
   }
+#acc-btns ul{
+  list-style: none;
+    display: inline-flex;
+    padding: 0;
+}
+#acc-btns ul li{
+  margin: 0 1rem;
+}
+
   #sidebar-nav ul {
-  
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
   #sidebar-nav ul li {
-  
+    
   }
   #sidebar-nav ul li a {
-    color: rgb(182, 182, 182);
+    color: #848096;
     text-align: center;
     font-size: .95em;
-    padding: 15px 20px;
+    margin: 15px 0px;
+    margin-top: 1rem;
     float: right;
-    width: 100%;
+    width: 90%;
     font-weight: 600;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -99,7 +102,6 @@ ul {
     font-size: 1.3rem;
   }
   #sidebar-nav ul li a.active {
-    border-left: 0.7rem solid #524496;
     color: #524496;
     font-size: 1.3rem;
   }
@@ -108,9 +110,16 @@ ul {
     font-size: 1.3rem;
   }
   #sidebar-nav i {
-    padding-left: 4rem;
+    margin-left: 1rem;
     font-size: 1em;
-    color: rgb(182, 182, 182);
+    color: #848096;
     width: 25px;
     text-align: center;
+  }
+  .round {
+    border-radius: 2rem !important;
+    background-color: #524496 !important;
+    color: #fff!important;
+    font-size: 16px;
+    padding: 0.5rem 4rem;
   }
