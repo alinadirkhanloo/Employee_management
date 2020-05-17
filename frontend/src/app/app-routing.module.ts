@@ -1,3 +1,4 @@
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { NavbarComponent } from './components/side-nav/navbar/navbar.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NgModule } from '@angular/core';
@@ -7,16 +8,16 @@ import { SideNavComponent } from './components/side-nav/side-nav.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  {path:'aaa',component:NavbarComponent},
+  {path:'test',component:DashboardComponent},
   {
     path: 'sidenav',
     component: SideNavComponent,
     children: [
       {
-        path: 'nav',
+        path: 'dashboard',
         loadChildren: () =>
-          import('./components/side-nav/container/container.module').then(
-            (m) => m.ContainerModule
+          import('./pages/dashboard/dashboard.module').then(
+            (m) => m.DashboardModule
           ),
       },
     ],

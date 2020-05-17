@@ -1,0 +1,61 @@
+.background{
+    background: rgb(191, 255, 162);
+  }
+  .w1,
+  .w2 {
+    padding: 0;
+  }
+  .w-min-height {
+    min-height: 10rem;
+  }
+  .w-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+  }
+  .w-pad {
+    padding: 1.4rem 0;
+  }
+  .w1-1{
+      background-color: #fff;
+      .w1-1-icon {
+            color: #ff007c;
+            font-size: 34px;
+          }
+  }
+  .w1-2{
+      background-color: #fff;
+      .w1-2-icon {  
+            color: #fbff18;
+            font-size: 34px;
+          }
+  }
+  .w2-1{
+      background-color: #fff;
+      .w2-1-icon {
+            color: #0099ff;
+            font-size: 34px;
+          }
+  }
+  .w2-2{
+      // border: 2px solid #dee2e6 !important;
+      background-color: #fff;
+      .w2-2-icon {   
+            color: #8c00ff;
+            font-size: 34px;
+          }
+  }
+  
+  .w-text {
+    padding: 1.4rem 0;
+    margin-right: 1rem;
+  }
+  .round {
+    border-radius: 1.25rem !important;
+  }
+  
+  ::ng-deep .canvasjs-chart-credit{
+    display: none;
+  }
